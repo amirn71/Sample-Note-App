@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout2"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="title"
+            android:id="@+id/title"
+            android:backgroundTint="@color/transparent_black_percent_5"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textInputLayout2"
+        android:layout_alignLeft="@+id/textInputLayout2"
+        android:layout_alignStart="@+id/textInputLayout2"
+        android:layout_alignRight="@+id/textInputLayout2"
+        android:layout_alignEnd="@+id/textInputLayout2"
+        android:layout_above="@+id/relativeLayout2">
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@color/transparent_black_percent_5"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/relativeLayout2"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp">
+
+        <Button
+            android:text="B"
+            android:id="@+id/bold"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="bold"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text="I"
+            android:id="@+id/italic"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textStyle="italic"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text="@string/underline"
+            android:id="@+id/underline"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text=""
+            android:id="@+id/centerJustify"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text=""
+            android:id="@+id/left_justify"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text=""
+            android:id="@+id/right_justify"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text=""
+            android:id="@+id/strikethrough"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+
+        <Button
+            android:text=""
+            android:id="@+id/superscript"
+            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:fontFamily="serif" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.note.amirehsan.samplenoteapp.Activityes.Activity_Category" >
+    <item android:id="@+id/backup"
+        android:title="Backup"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/restore"
+        android:title="Restore"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

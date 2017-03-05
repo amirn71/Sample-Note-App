@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:id="@+id/main"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="70dp">
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/bc_red"
+            android:id="@+id/color"
+            android:layout_marginLeft="15dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/first"
+                android:gravity="center"
+                android:textSize="19sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/color"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignTop="@+id/color"
+            android:layout_alignBottom="@+id/color">
+
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/name"
+                android:textColor="@android:color/black"
+                android:layout_weight="0.5"
+                android:gravity="left|center"
+                android:textSize="17sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/date"
+                android:layout_weight="0.5"
+                android:gravity="left|center"
+                android:textSize="13sp"
+                android:textColor="@android:color/darker_gray" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:id="@+id/toolbar_main"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/drawing_layout"
+        android:background="@color/White"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="5dp">
+
+
+
+
+
+
+    </FrameLayout >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout2"
+        android:background="?android:attr/colorBackground"
+
+        android:layout_below="@+id/toolbar_main"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/title"
+            android:layout_weight="1"
+            android:background="?android:attr/colorBackground"
+            android:hint="title"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/erase"
+                android:layout_toRightOf="@+id/button"
+                android:layout_toEndOf="@+id/button"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/draw"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/red"
+                android:textColor="@color/red"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/blue"
+                android:textColor="@color/blue"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:text=""
+                android:layout_width="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/yellow"
+                android:textColor="@color/Yellow"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout >

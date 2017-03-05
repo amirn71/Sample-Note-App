@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sample note app</string>
+    <string name="add_category">Add Category</string>
+    <string name="tick">✓</string>
+    <string name="yes">YES</string>
+    <string name="underline">U</string>
+    <string name="take_note">Take Note</string>
+    <string name="exit">Tap again for exit !</string>
+    <string name="successful">Restore Successful</string>
+    <string name="backup">Backup successful</string>
+</resources>

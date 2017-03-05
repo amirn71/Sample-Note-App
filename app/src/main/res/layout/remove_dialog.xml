@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:text="Are you sure for delete this folder?"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Title"
+        android:textSize="16sp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:text="@string/yes"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_light"
+        android:id="@+id/confirm"
+        android:layout_below="@+id/textView" />
+</RelativeLayout>
